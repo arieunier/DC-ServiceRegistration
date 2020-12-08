@@ -11,9 +11,6 @@
       "size": "standard-1x"
     }
   },
-  "addons": [
-    {"plan": "timber-logging:free"}
-  ],
   "buildpacks": [
     {
       "url": "heroku/python"
@@ -21,11 +18,6 @@
   ],
   "env":
     {          
-      "CLOUDAMQP_URL": {
-        "Description" : "CLOUDAMQP_URL to be filled by cloudamqp addon later",
-        "value" : "CLOUDAMQP_URL to be filled by cloudamqp addon later",
-        "required" : false
-      }, 
       "QUEUING_SYSTEM": {
         "Description" : "Which system to use for the queuing system: values are KAFKA/CLOUDAMQP. Will default to CLOUDAMQP",
         "value" : "CLOUDAMQP",
@@ -38,7 +30,7 @@
       }      ,
       "SUBSCRIBE_CHANNEL": {
         "Description" : "name of the channel the service must connect to when starting",
-        "value" : "fill me",
+        "value" : "registrationservice",
         "required" : true
       }
     }
