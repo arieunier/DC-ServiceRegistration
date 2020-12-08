@@ -1,1 +1,1 @@
-registrationservice: export PYTHONPATH=.:./appsrc:./appsrc/libs/; python appsrc/registrationservice.py
+registrationservice: export PYTHONPATH=$PYTHONPATH:.:./appsrc:./appsrc/libs/; python appsrc/registrationservice.py
